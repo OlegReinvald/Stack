@@ -73,7 +73,7 @@ int main() {
     stack.push(30);
 
     std::cout << "Stack elements: ";
-    for (int i = 0; i <= stack[2]; i++) {
+    for (int i = 0; i < 3; i++) {
         std::cout << stack[i] << " ";
     }
     std::cout << std::endl;
@@ -81,12 +81,12 @@ int main() {
     stack.pop();
 
     std::cout << "Stack elements after pop: ";
-    for (int i = 0; i <= stack[1]; i++) {
+    for (int i = 0; i < 2; i++) {
         std::cout << stack[i] << " ";
     }
     std::cout << std::endl;
 
-    Stack stackNew(5);
+    Stack stackNew(2);
     stackNew = stack;
 
     if (stackNew < stack) {
